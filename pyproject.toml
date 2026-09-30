@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "context-bank"
+version = "0.1.0"
+description = "File-based memory bank and CLAUDE.md toolkit for coding agents"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Ramya Singh" }]
+license = { text = "MIT" }
+
+[project.scripts]
+context-bank = "context_bank.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["context_bank*"]
